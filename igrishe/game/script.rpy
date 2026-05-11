@@ -5,13 +5,13 @@ default pn = "Jane Doe" # Player name
 image black = "#000"
 
 # Characters
-define me = Character(pn, color="#85aafa")
 define krista = Character('Криста', color="#FA8072")
 define timur = Character('Тимур', color="#191970")
 define zhenya_f = Character('Женя', color="#D3D3D3")
 define zhenya_m = Character('Женя', color="#a09d9d")
 
 # Side characters
+define me = Character("[pn]", color="#85aafa")
 define mom = Character('Мама', color="#ffff80")
 define nast = Character("Наставник", color="#ff8800") # I'll add the real color later
 define sec = Character('Охрана', color="#040c36")
@@ -358,9 +358,9 @@ label day1_f:
         "Уйти домой или вернутся к лекции"
 
         "Остаться и слушать лекцию":
-
+            pass
         "Уйти домой":
-            
+            pass
 
 
 
@@ -369,4 +369,4 @@ label day1_f:
 
 # TBD
 label prologue_m:
-label day1_m
+label day1_m:
